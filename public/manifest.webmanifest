@@ -1,0 +1,11 @@
+{
+  "name": "Thailanda & Singapore 2027",
+  "short_name": "Vacanța 2027",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf8f2",
+  "theme_color": "#146864",
+  "lang": "ro",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

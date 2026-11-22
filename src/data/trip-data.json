@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.1",
+  "title": "Thailanda & Singapore — Ianuarie 2027",
+  "language": "ro",
+  "travelers": 2,
+  "dates": {"departureFromRomania": "2027-01-01", "firstDestinationArrival": "2027-01-02", "returnFlightDate": "2027-01-18", "nights": 16},
+  "preferences": ["minimum 2 nopți în fiecare destinație", "fără zboruri interne în Thailanda", "urban + rural + plaje + hiking ușor 2–4 ore", "ritm echilibrat, cu relaxare", "transferuri cât mai simple"],
+  "destinations": [
+    {"id":"bangkok", "name":"Bangkok", "country":"Thailanda", "timezone":"Asia/Bangkok", "checkIn":"2027-01-02", "checkOut":"2027-01-05", "nights":3, "hotelStatus":"Planificat", "coordinates":[13.7286, 100.5341], "suggestedAreas":["Silom", "Chinatown", "lângă BTS/MRT"], "highlights":["Grand Palace + Wat Phra Kaew", "Wat Pho", "Wat Arun", "Chinatown / Yaowarat", "Talad Noi", "Canalele Thonburi"], "logistics":["Grab și taxi pentru transferuri", "BTS/MRT pentru deplasări în oraș", "Bărci pe râul Chao Phraya pentru zona templelor"], "notes":["Aterizare la 04:30; rezervă noaptea precedentă sau confirmă check-in foarte devreme", "Pe 5 ianuarie transfer foarte devreme la aeroport"]},
+    {"id":"singapore", "name":"Singapore", "country":"Singapore", "timezone":"Asia/Singapore", "checkIn":"2027-01-05", "checkOut":"2027-01-08", "nights":3, "hotelStatus":"Planificat", "coordinates":[1.3008, 103.8553], "suggestedAreas":["Bugis", "Chinatown", "lângă MRT"], "highlights":["Marina Bay + Merlion", "Gardens by the Bay", "Chinatown + Maxwell Food Centre", "Little India", "Kampong Glam", "Southern Ridges + Henderson Waves"], "logistics":["MRT pentru aeroport și oraș", "Plata contactless în transportul public; verifică înainte"], "notes":["Ianuarie poate fi ploios; păstrează alternative indoor"]},
+    {"id":"krabi", "name":"Ao Nang / Krabi", "country":"Thailanda", "timezone":"Asia/Bangkok", "checkIn":"2027-01-08", "checkOut":"2027-01-12", "nights":4, "hotelStatus":"Planificat", "coordinates":[8.0326, 98.8250], "suggestedAreas":["Ao Nang aproape de plajă și restaurante"], "highlights":["Railay și Phra Nang", "Tha Pom Khlong Song Nam", "Emerald Pool", "Krabi Town"], "logistics":["Long-tail boats din Ao Nang spre Railay", "Taxi sau excursie organizată pentru Emerald Pool"], "notes":["Sosire probabil spre seară; nu programa excursie pe 8 ianuarie"]},
+    {"id":"yaonoi", "name":"Ko Yao Noi (Koh Yao Noi)", "country":"Thailanda", "timezone":"Asia/Bangkok", "checkIn":"2027-01-12", "checkOut":"2027-01-15", "nights":3, "hotelStatus":"Planificat", "coordinates":[8.1080, 98.6280], "suggestedAreas":["Pasai Beach", "coasta estică"], "highlights":["Sate și plantații cu bicicleta", "Plaje liniștite", "Restaurante locale"], "logistics":["Sosire/plecare prin Manoh Pier", "Scuter, bicicletă sau taxi de insulă; cere hotelului transfer"], "notes":["Insulă rurală; opțiuni de transport limitate", "Mareele pot afecta înotul"]},
+    {"id":"phuket", "name":"Phuket", "country":"Thailanda", "timezone":"Asia/Bangkok", "checkIn":"2027-01-15", "checkOut":"2027-01-18", "nights":3, "hotelStatus":"Planificat", "coordinates":[8.0920, 98.2990], "suggestedAreas":["Nai Yang, aproape de aeroport", "Bang Tao, dacă se preferă zona de resort"], "highlights":["Khao Phra Thaeo Wildlife Sanctuary", "Bang Pae / Ton Sai Waterfall", "Phuket Old Town", "Lard Yai Sunday Market"], "logistics":["Sosire cu barca la Bang Rong Pier, apoi taxi", "Nai Yang e la 10–20 min de aeroport"], "notes":["Pe 18 ianuarie zbor la 09:00; țintă sosire aeroport 06:00", "17 ianuarie este duminică: posibilă piață Lard Yai în Old Town"]}
+  ],
+  "mapPoints": [
+    {"id":"bkk", "label":"Aeroport Suvarnabhumi (BKK)", "coordinates":[13.6900, 100.7501], "kind":"airport"},
+    {"id":"dmk", "label":"Aeroport Don Mueang (DMK) — de verificat pe bilet", "coordinates":[13.9126, 100.6067], "kind":"airport"},
+    {"id":"sin", "label":"Aeroport Changi (SIN)", "coordinates":[1.3644, 103.9915], "kind":"airport"},
+    {"id":"kbv", "label":"Aeroport Krabi (KBV)", "coordinates":[8.0992, 98.9862], "kind":"airport"},
+    {"id":"nopparat", "label":"Nopparat Thara Pier", "coordinates":[8.0476, 98.8085], "kind":"pier"},
+    {"id":"manoh", "label":"Manoh Pier, Ko Yao Noi", "coordinates":[8.1290, 98.5990], "kind":"pier"},
+    {"id":"bangrong", "label":"Bang Rong Pier, Phuket", "coordinates":[8.0452, 98.4171], "kind":"pier"},
+    {"id":"hkt", "label":"Aeroport Phuket (HKT)", "coordinates":[8.1132, 98.3169], "kind":"airport"}
+  ],
+  "route": [
+    {"from":"bkk", "to":"bangkok", "mode":"ground", "date":"2027-01-02"},
+    {"from":"bangkok", "to":"dmk", "mode":"ground", "date":"2027-01-05"},
+    {"from":"dmk", "to":"sin", "mode":"flight", "date":"2027-01-05"},
+    {"from":"sin", "to":"singapore", "mode":"ground", "date":"2027-01-05"},
+    {"from":"singapore", "to":"sin", "mode":"ground", "date":"2027-01-08"},
+    {"from":"sin", "to":"kbv", "mode":"flight", "date":"2027-01-08"},
+    {"from":"kbv", "to":"krabi", "mode":"ground", "date":"2027-01-08"},
+    {"from":"krabi", "to":"nopparat", "mode":"ground", "date":"2027-01-12"},
+    {"from":"nopparat", "to":"manoh", "mode":"boat", "date":"2027-01-12"},
+    {"from":"manoh", "to":"yaonoi", "mode":"ground", "date":"2027-01-12"},
+    {"from":"yaonoi", "to":"manoh", "mode":"ground", "date":"2027-01-15"},
+    {"from":"manoh", "to":"bangrong", "mode":"boat", "date":"2027-01-15"},
+    {"from":"bangrong", "to":"phuket", "mode":"ground", "date":"2027-01-15"},
+    {"from":"phuket", "to":"hkt", "mode":"ground", "date":"2027-01-18"}
+  ],
+  "flights": [
+    {"id":"f1", "date":"2027-01-01", "route":"București OTP → Bangkok BKK", "airline":"Turkish Airlines", "departureLocal":null, "departureTimezone":"Europe/Bucharest", "arrivalLocal":"2027-01-02T04:30", "arrivalTimezone":"Asia/Bangkok", "status":"details supplied; booking not independently verified", "statusRo":"De verificat", "estimatedUsdPerPerson":null, "notes":["Ora de plecare din București nu este în date; completează din bilet"]},
+    {"id":"f2", "date":"2027-01-05", "route":"Bangkok → Singapore SIN", "airline":"Thai AirAsia", "departureLocal":"2027-01-05T07:00", "departureTimezone":"Asia/Bangkok", "arrivalLocal":"2027-01-05T10:30", "arrivalTimezone":"Asia/Singapore", "estimatedUsdPerPerson":125, "estimatedUsdForTwo":250, "status":"planned, not yet confirmed purchased", "statusRo":"Planificat", "notes":["Aeroportul de plecare probabil DMK; verifică pe bilet", "Plecare spre aeroport în jur de 03:00–03:30, în funcție de hotel"]},
+    {"id":"f3", "date":"2027-01-08", "route":"Singapore SIN → Krabi KBV", "airline":"Scoot", "departureLocal":"2027-01-08T16:50", "departureTimezone":"Asia/Singapore", "arrivalLocal":"2027-01-08T17:40", "arrivalTimezone":"Asia/Bangkok", "estimatedUsdPerPerson":100, "estimatedUsdForTwo":200, "status":"planned, not yet confirmed purchased", "statusRo":"Planificat", "notes":["Hotel → Changi în jur de 12:45–13:15, în funcție de hotel", "Sosire la hotelul din Ao Nang aproximativ 19:00–20:00"]},
+    {"id":"f4", "date":"2027-01-18", "route":"Phuket HKT → București OTP", "airline":"Turkish Airlines", "departureLocal":"2027-01-18T09:00", "departureTimezone":"Asia/Bangkok", "arrivalLocal":null, "arrivalTimezone":"Europe/Bucharest", "status":"details supplied; booking not independently verified", "statusRo":"De verificat", "estimatedUsdPerPerson":null, "notes":["Fii la aeroport în jur de 06:00", "Ora de sosire în București nu este în date"]}
+  ],
+  "days": [
+    {"date":"2027-01-01", "place":"În tranzit", "theme":"Plecare", "activities":["Plecare din București cu Turkish Airlines spre Bangkok"], "intensity":"travel"},
+    {"date":"2027-01-02", "place":"Bangkok", "theme":"Sosire și acomodare", "activities":["Aterizare 04:30; transfer și odihnă", "După-amiază Chinatown", "Seara street food pe Yaowarat Road"], "intensity":"relaxed"},
+    {"date":"2027-01-03", "place":"Bangkok", "theme":"Bangkok istoric", "activities":["Grand Palace + Wat Phra Kaew", "Wat Pho", "Wat Arun cu traversarea râului", "Cină cu vedere la râu"], "walkingHours":"3–4, fragmentat", "intensity":"active"},
+    {"date":"2027-01-04", "place":"Bangkok", "theme":"Cartiere și canale", "activities":["Talad Noi, cafenele și piețe", "Tur cu barca în canalele Thonburi", "Opțional rooftop bar sau masaj"], "intensity":"balanced"},
+    {"date":"2027-01-05", "place":"Singapore", "theme":"Zbor matinal și Marina Bay", "activities":["Zbor AirAsia 07:00–10:30", "Transfer la hotel, prânz", "Marina Bay, Merlion", "Gardens by the Bay, spectacol de lumini"], "intensity":"travel"},
+    {"date":"2027-01-06", "place":"Singapore", "theme":"Cartiere culturale", "activities":["Chinatown", "Buddha Tooth Relic Temple", "Maxwell Food Centre", "Little India", "Kampong Glam + Haji Lane"], "walkingHours":"3–5 cu pauze și MRT", "intensity":"balanced"},
+    {"date":"2027-01-07", "place":"Singapore", "theme":"Hiking și grădini", "activities":["Southern Ridges + Henderson Waves", "Cloud Forest", "Flower Dome"], "walkingHours":"2–3", "intensity":"active"},
+    {"date":"2027-01-08", "place":"Ao Nang / Krabi", "theme":"Zbor spre Krabi", "activities":["Dimineață liberă în Singapore", "Zbor Scoot 16:50–17:40", "Transfer Krabi Airport → Ao Nang", "Cină și odihnă"], "intensity":"travel"},
+    {"date":"2027-01-09", "place":"Ao Nang / Krabi", "theme":"Railay și Phra Nang", "activities":["Long-tail boat spre Railay", "Railay West, Railay East și Phra Nang", "Plimbări, înot și relaxare"], "walkingHours":"2–3 cu pauze", "intensity":"balanced"},
+    {"date":"2027-01-10", "place":"Ao Nang / Krabi", "theme":"Mangrove și rural", "activities":["Tha Pom Khlong Song Nam", "Ao Thalane și zone rurale", "Opțional caiac"], "walkingHours":"2–3", "intensity":"balanced"},
+    {"date":"2027-01-11", "place":"Ao Nang / Krabi", "theme":"Pădure și Krabi Town", "activities":["Emerald Pool", "Izvoare termale în zona Khlong Thom", "Krabi Town, piețe și restaurante"], "walkingHours":"2–3 cumulat", "intensity":"balanced"},
+    {"date":"2027-01-12", "place":"Ko Yao Noi", "theme":"Transfer pe insulă", "activities":["Barcă Ao Nang → Manoh Pier", "Transfer la cazare", "Plajă și cină locală"], "intensity":"travel"},
+    {"date":"2027-01-13", "place":"Ko Yao Noi", "theme":"Explorare rurală cu bicicleta", "activities":["Tur prin sate, plantații și zone agricole", "Prânz local", "Plajă sau masaj"], "cyclingHours":"2–4", "intensity":"balanced"},
+    {"date":"2027-01-14", "place":"Ko Yao Noi", "theme":"Natură și relaxare", "activities":["Plimbare rurală, eventual cu ghid", "Plajă, piscină și restaurante locale"], "walkingHours":"2–3", "intensity":"relaxed"},
+    {"date":"2027-01-15", "place":"Phuket", "theme":"Transfer și plajă", "activities":["Speedboat Manoh Pier → Bang Rong Pier", "Taxi la hotel", "Plajă și apus"], "intensity":"travel"},
+    {"date":"2027-01-16", "place":"Phuket", "theme":"Pădure și cascade", "activities":["Khao Phra Thaeo Wildlife Sanctuary", "Bang Pae sau Ton Sai Waterfall", "După-amiază relaxată"], "walkingHours":"2–4 dacă traseul ales permite", "intensity":"active"},
+    {"date":"2027-01-17", "place":"Phuket", "theme":"Old Town și piața de duminică", "activities":["Plajă dimineața", "Phuket Old Town după-amiază", "Lard Yai Sunday Walking Street Market, dacă are loc", "Pregătire bagaje"], "intensity":"balanced"},
+    {"date":"2027-01-18", "place":"Plecare din Phuket", "theme":"Întoarcere", "activities":["La aeroport aproximativ 06:00", "Zbor Turkish Airlines HKT 09:00 spre București"], "intensity":"travel"}
+  ],
+  "transfers": [
+    {"date":"2027-01-02", "route":"Bangkok BKK → hotel", "mode":"ground", "recommended":"Taxi oficial / Grab", "options":["Taxi", "Grab", "Airport Rail Link + BTS/MRT dacă circulă la ora respectivă"], "durationDoorToDoor":"aprox. 1–2 ore incluzând ieșirea din aeroport", "costEuroForTwo":[12,20], "status":"estimate", "statusRo":"Planificat"},
+    {"date":"2027-01-05", "route":"Hotel Bangkok → aeroportul de plecare", "mode":"ground", "recommended":"Taxi / Grab", "options":["Taxi", "Grab"], "durationDoorToDoor":"30–50 min de la hotel, variabil", "costEuroForTwo":[10,18], "status":"estimate; departure airport to verify", "statusRo":"De verificat"},
+    {"date":"2027-01-05", "route":"Changi SIN → hotel Singapore", "mode":"ground", "recommended":"MRT", "options":["MRT", "Taxi"], "durationDoorToDoor":"40–60 min MRT sau 20–35 min taxi", "costEuroForTwo":[3,5], "status":"estimate for MRT", "statusRo":"Planificat"},
+    {"date":"2027-01-08", "route":"Hotel Singapore → Changi SIN", "mode":"ground", "recommended":"MRT", "options":["MRT", "Taxi"], "durationDoorToDoor":"40–60 min MRT", "costEuroForTwo":[3,5], "status":"estimate for MRT", "statusRo":"Planificat"},
+    {"date":"2027-01-08", "route":"Krabi Airport KBV → hotel Ao Nang", "mode":"ground", "recommended":"Taxi", "options":["Shuttle/minivan", "Taxi", "Transfer privat"], "durationDoorToDoor":"35–50 min taxi; mai mult cu shuttle", "costEuroForTwo":[15,25], "status":"estimate for taxi", "statusRo":"Planificat"},
+    {"date":"2027-01-12", "route":"Hotel Ao Nang → hotel Ko Yao Noi", "mode":"boat", "recommended":"Transfer la Nopparat Thara Pier + speedboat la Manoh Pier + taxi pe insulă", "options":["Speedboat", "Bilet combinat hotel–hotel, dacă există"], "durationDoorToDoor":"2–3 ore incluzând așteptări", "costEuroForTwo":[35,50], "status":"estimated, boat timetable unconfirmed", "statusRo":"De verificat"},
+    {"date":"2027-01-15", "route":"Hotel Ko Yao Noi → hotel Phuket", "mode":"boat", "recommended":"Speedboat Manoh Pier → Bang Rong Pier + taxi", "options":["Speedboat public", "Transfer combinat"], "durationDoorToDoor":"1,5–3 ore incluzând așteptări", "costEuroForTwo":[35,65], "status":"estimated, boat timetable unconfirmed", "statusRo":"De verificat"},
+    {"date":"2027-01-18", "route":"Hotel Nai Yang → aeroport Phuket HKT", "mode":"ground", "recommended":"Shuttle de la hotel rezervat dinainte / taxi", "options":["Shuttle hotel", "Taxi"], "durationDoorToDoor":"10–20 min din Nai Yang", "costEuroForTwo":[5,15], "status":"estimate", "statusRo":"Planificat"}
+  ],
+  "budget": {
+    "currency":"EUR", "forTravelers":2, "excludes":["Zborurile Turkish Airlines din/spre România", "Cumpărături mari", "Asigurarea (nebugetată explicit)", "Taxe pentru bagaje suplimentare"],
+    "targetTotalEuro":3500,
+    "targetBreakdownEuro":{"accommodation":1500,"foodAndDrinks":600,"activitiesAndEntertainment":450,"transportIncludingRegionalFlights":780,"miscellaneous":170},
+    "scenarioEstimatesEuro":{"economy":2570,"comfortable":4615},
+    "accommodationByDestinationEuro":{"bangkok":{"nights":3,"perRoomNight":[55,95],"total":[165,285]},"singapore":{"nights":3,"perRoomNight":[100,160],"total":[300,480]},"krabi":{"nights":4,"perRoomNight":[65,115],"total":[260,460]},"yaonoi":{"nights":3,"perRoomNight":[60,120],"total":[180,360]},"phuket":{"nights":3,"perRoomNight":[65,120],"total":[195,360]}},
+    "foodEuroForTwoByDestination":{"bangkok":[60,105],"singapore":[105,195],"krabi":[100,180],"yaonoi":[75,135],"phuket":[90,165]},
+    "activitiesEuroForTwoByDestination":{"bangkok":[50,110],"singapore":[80,170],"krabi":[80,200],"yaonoi":[20,90],"phuket":[30,120]},
+    "regionalFlightsQuotedUsdForTwo":{"airAsia":250,"scoot":200,"total":450},
+    "mainTransferBudgetEuroForTwo":{"low":118,"high":203},
+    "localTransportAndExcursionsBudgetEuroForTwo":{"low":150,"high":330},
+    "defaultExchangeRates":{"note":"Presupuneri editabile, nu cursuri reale. Actualizează înainte de calcule.", "EURperUSD":0.86, "EURperTHB":0.026, "EURperSGD":0.66},
+    "notes":["Intervalele scenariilor sunt aproximative; categoriile pot avea rotunjiri diferite față de subintervalele pe destinații", "Nu aduna cotațiile în USD direct cu cheltuielile în EUR fără o presupunere de curs", "Evită dubla numărare a transportului local și a prețurilor de excursii"]
+  },
+  "luggage": {
+    "travelers":2,
+    "planned":[{"id":"rab","model":"Rab Expedition II Kitbag","volumeLiters":50,"count":1,"dimensionsCm":"NESIGUR: lungime observată 65 cm; o discuție anterioară indica 55 × 32 × 27 — măsoară geanta reală"},{"id":"forclaz","model":"Forclaz Travel 500 Organizer","volumeLiters":40,"count":1,"dimensionsCm":"Citat anterior 55 × 32 × 27; verifică modelul exact"}],
+    "optional":[{"id":"deuter","model":"Deuter Trans Alpine 22 SL","volumeLiters":22,"count":1,"dimensionsCm":"50 × 26 × 20, verifică revizia"}],
+    "airlineLimits":[
+      {"id":"airasia","airline":"Thai AirAsia","flightId":"f2","combinedCarryOnKgPerPerson":7,"mainBagMaxCm":[56,36,23],"personalItemMaxCm":[40,30,10]},
+      {"id":"scoot","airline":"Scoot (Economy)","flightId":"f3","combinedCarryOnKgPerPerson":10,"mainBagMaxCm":[54,38,23],"personalItemMaxCm":[40,30,10]}
+    ],
+    "rulesToVerify":["Thai AirAsia: bază 7 kg bagaj de mână combinat per pasager, geantă principală max 56 × 36 × 23 cm, obiect personal max 40 × 30 × 10 cm", "Scoot Economy: bază 10 kg bagaj de mână combinat per pasager, geantă principală max 54 × 38 × 23 cm, obiect personal max 40 × 30 × 10 cm", "Orice depășire de dimensiune poate duce la taxă la poartă; nu presupune că micile depășiri sunt tolerate"]
+  },
+  "checklist": [
+    {"id":"check-airasia","label":"Rezervă / confirmă Bangkok → Singapore, 5 ianuarie, Thai AirAsia","done":false},
+    {"id":"check-scoot","label":"Rezervă / confirmă Singapore → Krabi, 8 ianuarie, Scoot","done":false},
+    {"id":"check-hotel-bkk","label":"Hotel Bangkok: confirmă accesul la cameră foarte devreme pe 2 ianuarie","done":false},
+    {"id":"check-hotels","label":"Rezervă hotelurile Bangkok, Singapore, Ao Nang, Ko Yao Noi, Phuket","done":false},
+    {"id":"check-boat-12","label":"Confirmă barca Ao Nang → Ko Yao Noi pe 12 ianuarie","done":false},
+    {"id":"check-boat-15","label":"Confirmă barca Ko Yao Noi → Phuket pe 15 ianuarie","done":false},
+    {"id":"check-bag","label":"Măsoară și cântărește bagajele; verifică regulile AirAsia și Scoot","done":false},
+    {"id":"check-thai-arrival","label":"Verifică și completează TDAC pentru fiecare intrare în Thailanda, la datele admise","done":false},
+    {"id":"check-sg-arrival","label":"Verifică și completează SG Arrival Card înainte de intrarea în Singapore","done":false},
+    {"id":"check-insurance","label":"Asigurare de călătorie și eventual acoperire pentru hiking","done":false},
+    {"id":"check-hkt-transfer","label":"Rezervă transfer matinal la aeroportul Phuket pentru 18 ianuarie","done":false}
+  ],
+  "assumptions": [
+    "Niciun zbor regional, hotel sau barcă nu este marcat ca rezervat; statusurile se actualizează în acest fișier.",
+    "Zborurile Turkish Airlines sunt date furnizate de voi, neconfirmate independent; ora plecării din București și ora sosirii înapoi lipsesc.",
+    "Aeroportul de plecare AirAsia din Bangkok este presupus DMK — verifică pe bilet.",
+    "Operatorii și orarele bărcilor din 12 și 15 ianuarie nu sunt confirmate.",
+    "Toate costurile sunt estimări de planificare, nu chitanțe sau oferte.",
+    "Cursurile de schimb din pagina Buget sunt presupuneri editabile.",
+    "Dimensiunile genților Rab și Forclaz trebuie măsurate pe modelele fizice (lungimea Rab: 55 sau 65 cm?).",
+    "Regulile de bagaje AirAsia și Scoot trebuie verificate pe site-urile oficiale înainte de zbor.",
+    "TDAC poate fi necesar la ambele intrări în Thailanda (2 și 8 ianuarie); SG Arrival Card pentru 5 ianuarie — verifică cerințele oficiale.",
+    "Coordonatele de pe hartă sunt aproximative (zone, nu hoteluri).",
+    "Piața Lard Yai din 17 ianuarie depinde de program — verifică local."
+  ],
+  "officialLinks": [
+    {"label":"AirAsia", "url":"https://www.airasia.com/"},
+    {"label":"Scoot", "url":"https://www.flyscoot.com/"},
+    {"label":"Thailand Digital Arrival Card", "url":"https://tdac.immigration.go.th/"},
+    {"label":"Singapore Arrival Card", "url":"https://eservices.ica.gov.sg/sgarrivalcard/"}
+  ],
+  "disclaimer":"Acesta este un plan, nu un set de rezervări confirmate. Prețurile, orele de transport și regulile de intrare se verifică la operatorii oficiali înainte de cumpărare și călătorie."
+}
